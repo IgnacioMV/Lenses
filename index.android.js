@@ -6,7 +6,6 @@
 var React = require('react-native');
 var LoginPage = require('./LoginPage');
 var MainPage = require('./MainPage');
-var TabBar = require('./TabBar');
 
 var _navigator;
 
