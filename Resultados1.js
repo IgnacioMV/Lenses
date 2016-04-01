@@ -19,12 +19,12 @@ class Resultados1 extends Component {
     	super(props);
     	var results = [];
   		var searchField1 = "Name";
-  		var searchField2 = "Type";
+  		var searchField2 = "Model";
   		var searchField3 = "Formato";
 
   		for (var i=0 ; i < lensesData.lenses.length ; i++) {
     		if (lensesData.lenses[i][searchField1] == this.props.lens.name && 
-    			lensesData.lenses[i][searchField2] == this.props.lens.type && 
+    			lensesData.lenses[i][searchField2] == this.props.lens.model && 
     			lensesData.lenses[i][searchField3] == this.props.lens.format) {
         		results.push(lensesData.lenses[i]);
     		}
@@ -68,7 +68,7 @@ class Resultados1 extends Component {
 		} else{
 			var string = this.state.length + " resultados.";
 		}
-		var searched = this.props.lens.name + ", " + this.props.lens.type + ", " + this.props.lens.format;
+		var searched = this.props.lens.name + ", " + this.props.lens.model + ", " + this.props.lens.format;
     	return(
     	<View style={styles.container}>
     		<Text style={{backgroundColor: '#eeeeee'}}>{searched}</Text>

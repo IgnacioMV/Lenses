@@ -51,7 +51,7 @@ class Detalle1 extends Component {
           <Text style={styles.row}>{lens.Type}</Text>
           <Text style={styles.row}>{lens.Lens}</Text>
           <Text style={styles.row}>{lens.Formato}</Text>
-          <Text style={styles.row}>{lens.Mode}l</Text>
+          <Text style={styles.row}>{lens.Model}</Text>
           <Text style={styles.row}>{lens.Focal_Length}</Text>
           <Text style={styles.row}>{lens.T}</Text>
           <Text style={styles.row}>{lens.Close_Focus}</Text>

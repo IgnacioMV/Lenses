@@ -20,13 +20,13 @@ class Busqueda2 extends Component {
     var dataSource = new ListView.DataSource(
       {rowHasChanged: (r1, r2) => r1 !== r2});
     this.state = {
-      dataSource: dataSource.cloneWithRows(lensesData.types)
+      dataSource: dataSource.cloneWithRows(lensesData.models)
     }
   }
 
   onRowPressed(rowData: Obj) {
     var lens = this.props.lens;
-    lens.type = rowData.Type;
+    lens.model = rowData.Model;
     this.props.navigator2.push({
           id: 'busqueda3',
           lens: lens,
@@ -38,7 +38,7 @@ class Busqueda2 extends Component {
       <View>
         <TouchableHighlight style={styles.rowContainer}
           onPress={() => this.onRowPressed(rowData)}>
-          <Text style={styles.currency}>{rowData.Type}</Text> 
+          <Text style={styles.currency}>{rowData.Model}</Text> 
         </TouchableHighlight>
         <View style={styles.separator}/>
       </View>

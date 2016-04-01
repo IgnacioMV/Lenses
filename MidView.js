@@ -60,10 +60,10 @@ class MidView extends Component {
           lens={route.lens} lensName={route.lensName}/>);
       case 'busqueda3':
         return (<Busqueda3 navigator2={navigator2} title="busqueda3" 
-          lens={route.lens} lensName={route.lensName} lensType={route.lensType}/>);
+          lens={route.lens} lensName={route.lensName} lensModel={route.lensModel}/>);
       case 'resultados1':
         return (<Resultados1 navigator2={navigator2} title="resultados1" 
-          lens={route.lens} lensName={route.lensName} lensType={route.lensType} lensFormat={route.lensFormat}/>);
+          lens={route.lens} lensName={route.lensName} lensModel={route.lensModel} lensFormat={route.lensFormat}/>);
       case 'detalle1':
         return (<Detalle1 navigator2={navigator2} title="detalle1" lens={route.lens}/>);
     }
